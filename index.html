@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="EL Caos Al Olvido">
+    <meta name="autor" content="Javi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+     <link rel="stylesheet" href="./css/index.css" type="text/css">
+     <link rel="stylesheet" href="./css/fontello.css" type="text/css">
+     <title>El Caos Al Olvido</title>
+    <script src="./js/index.js"></script>
+    <script src="./js/capas.js"></script>
+    <script src="./jquery/jquery.js"></script>
+    <script src="./js/menu.js"></script>
+   
+</head>
+<body onload="Estado('Inicial'); transferContent();">
+    <div class="capa1" id="capa1">
+        <header id="Cabecera">
+            <h1>El Caos Al Olvido</h1>
+        </header>
+    
+        <div class="container">
+            <input class="boton"  type="button"  id="env" value="Acceder"  onclick="accederOtraPagina();"/>
+        </div>
+       
+        
+    </div>
+
+    <div class="capa3" id="capa3">
+        <header id="Cabecera">
+            <h1>El Caos Al Olvido</h1>
+        </header>
+        <button id="menu-toggle">☰</button>
+        <nav id="nav-menu">   
+            <div><a href="javascript:Estado('Historia');"><b>Historia del rol</b></a></div>
+            <div><a href="javascript:Estado('Tematicas');"><b>Temáticas</b></a></div>
+            <div><a href="javascript:Estado('Partidas');"><b>Partidas Disponibles</b></a></div>
+            <div><a href="javascript:Estado('Entrevistas');"><b>Entrevistas</b></a></div>
+        </nav>
+        <aside id="Lizq">
+            <figure>
+                <img id="Publicidad" src="./img/El azar es la condena de los mortales_20240614_091350_0000.png" alt="Cthulhu-In-Rlyeh-68065284-1">
+            </figure>
+        </aside>
+        <aside id="Ldch">
+            <figure>
+                <img id="Publicidad" src="./img/¡Mira mi nuevo diseño hecho en Canva!.png" alt="Cthulhu-In-Rlyeh-68065284-1">
+            </figure>
+        </aside>
+        <main>
+            <Section>
+                <article>
+                    <h3>Introducci&oacute;n</h3>
+                    <p id="Introduccion">Juego de Rol o Rol de mesa se definir&iacute;a como una aventura que tiene lugar en un mundo imaginario, en el cual se desarrolla dicha actividad o sucesos a través de la conversación entre los jugadores y DM (Dungeon Master). 
+                        Es decir, cada jugador o persona interpreta el papel de un personaje que participa en la historia, conducido por otra persona, que hace las veces de narrador o juez a lo que denominamos Dungeon Master. <br>
+                        En este tipo de juegos, la cooperaci&oacute;n suele ser vital para llegar al desenlace de la historia, 
+                        pero se dan ocasiones donde el personaje que un jugador representa puede llegar a obstaculizar al resto de jugadores y, por tanto, al desarrollo de la partida. <br> <br> 
+                        El nacimiento de los juegos de rol se originó con Gary Gigax en 1973 y su suplemento para el juego de miniaturas Chainmail. 
+                        Por primera vez los personajes de wargames eran importantes a nivel individual. 
+                        Esa ambientación inicial era de fantasía, con claras influencias de las obras de J. R. R. Tolkien y Robert E. Howard.
+                        Su primer objetivo era el modelado o diseño de personajes,es decir, se trataba de crear características, habilidades 
+                        y reglas que pudieran ser usadas para traer a personajes, poco después surgió la idea del desarrollo y progresión de los personajes.
+                        El ejemplo más inmediato de esa idea fue el de Dungeons and Dragons, creado por Gary Gigax y Dave Arneson en 1974 donde en lugar de tener personajes estáticos, ofrecía a los jugadores formas de que sus
+                        personajes evolucionaran y cambiaran. <br> <br>
+                        El impacto de este fue tan fuerte con respecto al anterior que en muy poco tiempo se convirtió en norma. 
+                        Durante los siguientes años surgieron juegos como Traveller (1977) y La Llamada de Cthulhu (1981) que tuvieron una gran acogida y tenían propuestas diferentes a Dungeons and Dragons. <br><br>
+                        Alrededor de 1984 se concibió otra idea, los juegos de rol narrativos o storytelling role playing games, que en lugar 
+                        de centrarse en el desarrollo de los personajes se puso la atención en el desarrollo de la historia.
+                        En cierto grado se intento por contar mejores historias no siendo solo una inversión en el poder de los personajes, como fueron
+                        Paronia(1984), Pendragón (1985), Ars Magica(1987), Kult(1991) y Vampiro: La Mascarada(1991). <br><br>
+                        Por el año 2000 aparecio asentandose un nuevo movimiento en el mundo del rol llamado <b>movimiento Indie</b> con los foros The Forge y Story Games, y la teoría GNS el cual destaban en el control de los elementos del juego
+                        por parte del autor y en hacer propuestas alejadas de lo mainstream. Este movimineto tuvi juegos de gran éxito como The Burning Wheel(2002) y Fat(2003) y por último más adelante Apocalypse World(2010) y su prole de juestos con un sistema Powered by the Apocalypse. <br><br><br>
+                        Otro movimento que surgió fue el <b>movimento OSR</b> que proponían una vuelta a los orígenes de los juegos de rol, teniendo como espejo principal a las primeras ediciones de Dungeons and Dragons. <br><br><br>
+                        En la época actual se han publicado numerosos y variado juegos, volviendo la historia cada vez más compleja. <br><br>
+                        A lo largo de esta breve pero intensa historia el enfoque ha ido evolucionando al diseñar el núcleo del juego, la resolución de acciones, el desarrollo de personajes y la estructura de las historias, entre otros. <br><br>
+                    </p>
+                    <figure>
+                        <span><img src="img/librochtulu" alt="" width="80%" height="80%"></span>                 
+                        <span><img src="img/librocuthulu2.jpeg" alt="" width="80%" height="80%"></span> 
+                    </figure><br><br>
+                </article>
+            </Section>
+            <Section>
+               
+                <article>
+                    <h3>Desarrollo de los juegos</h3>
+                    <p><b><u>Modelos t&aacute;cticos, encuentros t&aacute;cticos</u> (1973)</b> <br><br>
+                    En la d&eacute;cada de 1960 los juegos de rol nacieron directamente de los juegos de miniaturas y wargames, por eso no debe sorprender que los primeros modelos tuvieran sistemas de combate muy r&iacute;gidos conformas de combate con miniautras de varientes del juego <i>Chainmail</i><br><br>
+                    Dicha tendencia permanecio en la actualidad en muchos t&iacute;tulos que a d&iacute;a de hoy cuesta encontrar algun juego que puntualice mucho en el aspecto t&aacute;ctico a parte del combate <br><br>
+                    <figure>
+                        <span><img src="img/figuras.jpg" alt="" width="80%"></span>
+                        <span><img src="img/figuras2.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </p><br>
+                    <p><b><u>Modelos ca&oacute;ticos, acciones simples, experiencia progresiva</u>(1974-1979)</b> <br><br>
+                    Con el paso de los tiempos se <b>unier&oacute;n distintos modelos de diseño dentro del juego</b> cuya relaci&oacute;n pudiera permanecer arbitraria o inconsistente, <b>pero consegu&iacute;an un resultado funcional</b><br>
+                    Juegos como <i>Dungeon and Dragons</i>y <i>Advance Dungeon and Dragons</i> ten&iacute;an un modelo para caracter&iacute;sticas, otro modelo para clase de armadura, otra para habilidades de combate, otro para hechizso de cl&eacute;rigo, otro modelo para hechizos del mago yotro para habilidades del ladr&oacute;n. De aqu&iacute; tambi&eacute;n surgieron los modelos de diseño de personajes basados en clases con Dungeon and Dragons <br><br>
+                    En este modelo de clases los personajes tenian un nucleo de habilidades &uacute;nicas y <b>no hab&iacute;a mucho espacio para personajes realmente propios</b>, lo cual fue una experiencia progresiva ya que se <b>basaba en una serie de objetivos separados pro grados (o niveles)</b> la que permit&iacute;an abrir nuevas categor&iacute;as y formas de juego a los personajes conforme ganaban en veteran&iacute;a. Otros t&iacute;tulos de la &eacute;poca que imitaron este modelo fueron juegos como <i>Tunnel & Trolls</i> la idea de <b>crearse a personajes b&aacute;sandose en sus habilidades y no en su clase</b> tambi&eacute;n surgi&oacute; en esta &eacute;poca. Esta idea fue tra&iacute;da principalmente por <i>Traveller</i> en 1977, un año despu&eacute;s el juego <i>RuneQuest</i> asent&oacute; esta idea cimentando la idea de experiencia constante, que implementaba la mejora de habilidades gradual ultilizando las habilidades mismas <br><br> 
+                    <figure>
+                        <span><img src="img/figuras3.jpg" alt="" width="80%"></span>
+                        <span><img src="img/amigosrol.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </p><br>
+                    <p><b><u>Modelos basados en puntos, acciones complejas, desapego con los personejes, personalidades significativas</u> (1980-1985)</b> <br><br>
+                    El modelo basado en puntos se apoyaba en la idea de que, a pesar de que los rangos num&ericos para describir <b>distintos subsistemas</b> fueran diferentes, <b>pod&iacute;an vincularse a partir de ciertos puntos est&aacute;ndar</b>, este modelo sucedi&oacute; aproximadamente a partir de <i>Traveller, Book 5, High Guard</i> donde se inclu&iacute;a puntos de construcci&oacute;n y med&iacute;a el valor de las naves por tonelajes, el cual limitaba la cantida de m&oacute;dulos a construir por el peso de los componentes, aunque quien verdaderamente trajo esta idea a las masas fue <i>Champions</i> el cual utiliz&oacute; un modelado de personajes con este tipo de puntos, tambien tomaron esta idea juegos de la talla <i>La Llamada de Cthulhu</i> y <i>Stormbringer</i>, con su sistema <i>Chaosium Basic Roleplaying</i> inspirado en las habilidades basicas percentiles del ladr&oacute;n de <i>Dungeon and Dragons</i> con <i>Rolemaster</i> <b>se popularizaron las acciones complejas</b>, el cual permit&iacute;an a los jugadores tenre grados de &eacute;xitos y fracaso a parte de simplemente acertar o fallar tiradas. Hasta esta &eacute;poca <b>la muerte de los personajes era vista como derrota</b>, pero juegos como <i>Paranoia</i> hizo de la muerte algo com&uacute;n y esperable, otros juegos como <i>Pendragon</i> tambi&eacute;n conocido por ser uno de los primeros en introducir <b>matrices de personalidad significativos</b> en los personajes, hizo &eacute;nfasis en esta idea al utilizar campañas muy largas donde los primeros personajes envejec&iacute;an y mor&iacute;an, y los jugadores ten&iacute;an que crearse otros personajes para continuar la historia, esto ten&iacute;a reprecusicones reales en los personajes, e incluso pod&iacute;a forzar acciones en casos extremos <br><br>
+                    <figure>
+                        <span><img src="img/amigosrol2.jpg" alt="" width="80%"></span>
+                        <span><img src="img/master.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </p><br>
+                    <p><b><u>Modelos universales, juego narrativo, control compartido</u>(1986-1988)</b><br><br>
+                    En este periodo se asentaron los <b>sistemas de juego implementables para una gran variedad de ambientaciones</b>, aunque esta idea era tan ambigua como los propios juegos de rol, el primero en impelentarla de forma sobresaliente con el sistema de juego <i>Chaosium Basic Roleplaying</i> sistema que se utilizo en otros juegos de rol cuyas ambientaciones difer&iacute;an enormemente entre s&iacute;. Pero <b>el m&aacute;s prominente de los juegos que proclam&oacute; que su sistema de juego pod&iacute;a utilizarse de forma universal</b>fue <i>GURPS</i>. Prestando mucha atenci&oacute;n al detalle en sus reglas, permitiendo implementar ambianteciones desde la prehistoria hasta los futuros m&aacute;s lejanos. Tambi&eacute;n en esta &eacute;poca surgi&oacute; una idea m&aacute;s clara de las organizaciones secretas o con alg&uacute;n fin transcendente como <i>Paranoia</i> o <i>Ars Magica</i>. Pero hasta mas tarde que no ser&iacute;a con <i>Vampiro: La Mascarada</i> cuando la idea de las organizaciones secretas fuera conocida por gran parte de los jugadores. <i>Ars Magica</i> tambien propuso una idea generalmente desconocida para los jugadores de rol,<b>el control compartido de personajes</b>. Cada jugador podía jugar distintos personajes vuyo impacto en la historia era relavante, y luego hab&iacute;a personajes que eran utilizados por todos los jugadores, de esta manera se conseguia una expereancia de progresion e interpretaci&oacute;n mucho m&aacute;s varida y compleja, lo cual tambien se trasladaba al director de juego, que pod&iacute;a ir cambiando, tambi&eacute;n surgi&oacute;la idea de <b>premiar con puntos de experiencia a los jugadores que interpretaban bien</b> a sus personajes y no solo por superar desaf&iacute;os. <br><br>
+                    <figure>
+                        <span><img src="img/master2.jpg" alt="" width="80%"></span>
+                        <span><img src="img/starship.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </p><br>
+                    <p><b><u>Modelos de estilo libre, creaci&oacute;n independiente de personajes, sistemas de resoluci&oacute;n controlados</u>(1988-2000)</b> <br><br>
+                    <i>Ars Magica</i> y <b>sus sistema de magia que permiti&iacute;a combinaciones infinitas de hechizos m&aacute;s all&aacute; de los escritos en el manual</b> fue uno de los pioneros en este estilo libre, tambi&eacute;n se populariz&oacute; <b>el uso de plantillas de personajes</b>, los cuales suger&iacute;an habilidades y transfondos gen&eacute;ricos. <i>Torg y Ars Magica</i> fueron los primeros en utilizarlos de forma sistem&aacute;ticas. <br><br> 
+                    Los modelos consistentes <b>comenzaron a intentar vincular todos los rangos num&eacute;ricos de los personajes entre s&iacute;</b>, el juego <i>Vampiro: La Mascarada</i>fue uno de los que intentaron lograr esta tarea uniendo la l&iacute;nea divisoria artificial entre atributos y habilidades de una manera m&aacute;s expl&iacute;tica, tambi&eacute;n utiliz&oacute; el mismo sistema que <i>Shadowrun</i> pero con dados de diez caras, con bajas estad&iacute;sticas y reflejadas con puntos en lugar de n&uacute;meros. <br><br> 
+                    Con &eacute;l se pretend&iacute;a formentar un <b>estilo de juego narrativo</b>, el cual fue ganando popularidad, lo que procuraba poner la ficci&oacute;n primero por encima de las mec&aacute;nicas. <br><br> 
+                    Tambi&eacute;n fue el primer o uno de los primeros que compartia un mismo mundo con otros juegos, como por ejemplo, <i>Hombre Lobo: El Apocalisis, Mago: La Ascensi&oacute;n entre otros</i>, e incluso en su propio pasado hist&oacute;rico mediaval con <i>Vampiro: Edad Oscura</i> en esta &eacute;poca hubo <b>estilos de creaci&oacute;n de personaje libre</b> como <i>Over the Edge</i>, el cual introduc&iacute;a un proceso de creaci&oacute;n donde los jugadores <b>describ&iacute;an sus personajes y solo entonces intentaban asignarles estad&iacute;sticas</b>, sin ninguna consideraci&iacute;on en el equilibrio del juego. Tambi&eacute;n <i>Deadlands</i> ide&oacute;un estilo propio de creaci&oacute;n de personajes que ven&iacute;an definido al extraer cartas de un baraja poker. Otros juegos de este estilo fueron <i>Sketch!</i>, donde los jugadores votaban las habilidades del personaje bas&aacute;ndose en un dibujo; o <i>Hero Wars</i> el cual los jugadores ten&iacute;an 100 palabras para describir a sus personajes, este &uacute;ltimo juego tambi&eacute;n populariz&oacute; el uso de <b>regñas abstractas para todo tipo de desaf&iacute;os</b> adem&aacute;s los jugadores podi&iacute;an utilizar reglas id&eacute;nticas o similares bien fuese para debatir, hacer carreras, lanzar jabalinas o pelear. Tambi&eacute;n <b>inclu&iacute;a sistemas diferentes,</b> como las apuestas, donde los jugadores apostaban distintos "puntos de acción" para que pudieran controlar el grado de esfuerzo y riesgo de cada encuentro.
+                    <figure>
+                        <span><img src="img/vampire.jpg" alt="" width="80%"></span>
+                        <span><img src="img/deadlans" alt="" width="80%"></span>
+                    </figure>
+                    </p><br>
+                    <p><b><u>Movimiento inde, movimiento OSR,  sistemas gen&eacute;ricos, reediciones, juegos especializados, juegos para niños, ambientaciones extensas</u> (2000-2017)</b><br><br>
+                        La historia reciente de los juegos de rol <b>gana en comlejidad debido al crecimiento de las editoriales y autores independientes,</b> aumentando el n&uacute;mero de juegos por año hsata nuestros d&iacute;as. En el año 2000 se public&oacute; la tercera edici&oacute;n de <i>Dungeons and Dragons</i> y se permiti&oacute; publicar suplementos compatibles cono el sistema d20 a trav&eacute;s de la <b>Open Game License</b>, este tipo de estrategias comerciales tuvieron un gran &eacute;xito. <br><br>
+                        Se vend&iacute;an m&aacute;s manuales b&aacute;sicos debidos a la gran cantida de suplementos respaldados oficialmente. Dicha apertura de licencia fue origen de <i>Pathfinder</i> cuyo &eacute;xito fue tan elevado que <b>super&oacute; por primera vez en ventas</b> a <i>Dungeon and Dragons</i>, el cual habia sido el juego m&aacute;s vendido anño tras año desde 1974. Durante esta &eacute;poca surgieron juegos como <i>Hack Master</i> el cual introdujo un sistema de combate de conteo, donde los jugadores decid&iacute;an las acciones "segundo a segundo", con apenas margen de tiempo entre acciones, lo que pretend&iacute;a ser una sensaci&oacute;n m&aacute;s realista y h&oacute;stil en los combates. En futuras ediciones se bas&oacute;en puntos de hechizo en lugar de un n&uacute;mero fijo de ellos, la consolidaci&oacute;n de los juegos de rol indie dio lugar a juegos como <i>The Burning Wheel</i> el cual utilizada para su creaci&oacute;n de personajes una monitorizaci&oacute;n desde el momento que nac&iacute;an hasta el comienzo de la aventura, combinaba un transfondo detallado con motivaciones y creencias que conectaba a los personajes jugadores con la historia y con los otros personajes jugadores. <br><br>
+                        La historia pretend&iacute;a desarrollarse org&aacute;nicamente sin ning&uacute;n gui&oacute;n prefijado. Inclu&iacute;a una serie de mec&aacute;nicas de juego expl&iacute;citamente diseñadas para evitar el encarrilamiento y favorecer la confianza y cooperaci&oacute;n entre jugadores. Uno de los aspectos singulares fue <b>la labor del director de juego consist&iacute;a principalmente en ofrecer desaf&iacute;os que cuestionasen esas creencias y motivaciones</b>, lo que llevo a que los jugadores tend&iacute;an a cambiar sus objetivos y actitudes a lo largo de la historia <i>Fate</i>, basaron en el sistema gen&eacute;rico <i>Fudge</i>, irrumpi&oacute; en escena y gan&oacute; notoriedad ya que su idea principal era diseñar <b>un sistema que facilitase la min&iacute;ma obstrucci&oacute;n hacia el aspecto narrativo del juego,</b>concibi&oacute; un</b>sistema de aspectos</b>, los cuales eran unos descriptores que pod&iacute;an invocarse los cuales estaban a libre interpretaci&oacute;n y hablaban sobre algo destacable del personaje o la escena. La interacci&oacute;n de los jugadores con la narrativa a trav&eacute;s de las mec&aacute;nicas, asi como su capacidad para alterarla, lo convirtieron en un juego que ofrec&iacute;a una experiencia no-convencional y alejada de lo mainstream. <br><br>
+                        Esta forma fue <b>diseñada con el objetivo de acercarlo a las masas</b>. Otros juegos como <i>Savage World</i> ganaron popularidad en ese periodo dado que enfatizaba en reducir la preparaci&oacute;n y acelerar la velocidad del juego, dotandolo de espectacularidad en lugar de enfatizar en la preparaci&oacute;n y el realismo. Durante este periodo surgieron <b>nuevas propuestas de juego</b> como <i>HeroQuest</i> donde se basaba en la improvisaci&oacute;n creativa, la agudeza verbal y la familaridad con las t&eacute;cnicas y el esterotipod de g&eacute;nero en cuesti&oacute;n. Otros utilizaron <b>una forma de resoluci&oacute;n de conflictos inspirada en el poker con pequeñas apuestas</b>, al inicio el director de juego decid&iacute;a que estaba en juego, determinaba cu&antos dados se pod&iacute;a tirar y se lanzaban, luego el personaje con iniciativa <i>"sub&iacute;a la apuesta"</i> y narraba una porci&oacute;n del conflicto que ser&iacute;a beneficiosa para &eacute;l, su oponente deb&iacute;a entonces responder subiendo la apuesta con m&aacute;s dados o declararse perdedor del conflicto, otros aspectos impotantes de este juego fue <b>un diseño innovador de creaci&oacute;n de poblaciones</b>, odne se incid&iacute;a en los personajes, sus deseos y que cosas se habian hecho los unos a los otros lo que conced&iacute;a al director la habilidad de implicar muchos a los jugadores en lugar de simplemente presentarles un desaf&iacute;o. Otros juegos como <i>FIasco</i> propon&iacute;an <b>un estilo de juego &uacute;nico sin director de juego que no requer&iacute;a de preparaci&oacute;n y enfatizaba en las relaciones entre personajes</b>, mientras que surgieron sistemas que intentaron tambien innovar algunos g&eacute;neros como el de la investigaci&oacute;n. <b>El movimiento indi mantuvo su fuerza</b> con <i>Apocalypse World</i> que dio a luz a varios juegos con su sistema y filosof&iacute;a que era un estilo donde <b>"la ficci&oacute;n va primero"</b> y no se preparaba la trama sino que m&aacute;s bien se jugaba <b>"para ver lo que sucede"</b>
+                        <figure>
+                            <span><img src="img/partidarol2.jpg" alt="" width="80%"></span>
+                            <span><img src="img/reunionrol.jpg" alt="" width="80%"></span>
+                        </figure>
+                        <br><br>
+                    </p>
+                    <p>El <b>movimiento OSR</b> fue posible al liberarse la licencia <i>Open Gaming License</i> del sistema de <i>Dungeons and Dragons</i> en el año 2000, sin embargo propon&iacute;a <b>un &eacute;nfasis menor en tramas lineales y grandes metatramas, y m&aacute;s en la agencia y libertad de los jugadores</b>, la mayor parte de sus reglas eran variantes de la reglas originales del juego, <i>Dungeon Crawl Classic</i>  tambi&eacute;n <b>hizo una apuesta fuerte por el revival</b> utilizando la <i>Open Gaming License</i> de la tercera versi&oacute;n intermedia de <i>Dungeons and Dragons</i> pero con un contenido y estilo inspirado en la primer edici&oacute;n de <i>Advanced Dungeons and Dragons</i>. <br><br>
+                        M&aacute;s adelante surgi&oacute; <i>Lamentions of the Flame Princess</i>, que recreaba las ediciones de <i>Dungeons and Dragons</i> de los 70 y 80, pero con <b>un toque distintivo lleno de una imaginer&iacute;a oscura e inquietante</b>, una propuesta de ambientaci&oacute;n del siglo XVII en sus primeras campañas publicadas,<b>en lugar de seguir el esp&iacute;rutu revival</b> como tal, vimos como <i>Pathfinder</i>. Por este motivo <i>Dungeons and Dragons</i> trabajar&iacute;a para publicar una quinta edici&oacute;n de su juego en 2014 que quitase las divisiones en la comunidad que produjo su cuarta edici&oacute;n, la cual fue ofuscada por <i>Pathfinder</i>. <br><br>
+                        Hubo un <b>resurgimiento de edici&oacute;nes antiguas</b> de juegos emblem&aacute;ticos como <i>GURPS</i> con <i>Transhuman Space</i>, lugego con <i>Pendragon</i> lo que llevo a que debido a cierta insatisfacci&oacute;n con la nueva ambientaci&oacute;n de Mundos de Tinieblas con <i>Vampiro: El R&eacute;quiem</i> surgieron nuevas reediciones de juegos muy queridos por la afici&oacute;n, este <b>espirit&uacute; de reedici&oacute;n</b> continua hasta d&iacute;a de hoy, otros juegos han apostado por <b>ambientaciones densas y complejas</b>, como puede ser <i>Eclipse</i>. En este periodo tambi&eacute;n ha habido un nacimiento sostenible de los <b>juegos de rol para niños</b>, como <i>Hero Kids</i>. <br><br>
+                        Otros juegos con un formato innovador como <i>Fall of Magic</i>, han sido probados con niños con gratas experiencias, utilizaban la narraci&oacute;n compartida con un claro &eacute;nfasis en contar historias de aventura. Su <b>formato de presentaci&oacute;n fue tambi&eacute;n &uacute;nico</b>, mostando el mapa de jeugo en forma de pergamino y utlizando distintos elementos como monedas y cartas. En la <b>actualidad</b> juegos como <i>Blades in the Dark, Starfinder</i>, entre otros presentan un parorama heterog&eacute;neo, el n&uacute;mero de juegos independies ha ido creciendo hasta nuestros d&iacute;as, ofreci&eacute;ndonos experiencias de todo tipo brindandonos un futuro muy variados que pretende satisfacer los m&uacute;ltiples gustos de un p&uacute;blico cada vez mas grande y dispar
+                    <figure>
+                        <span><img src="img/battleshipspace.jpg" alt="" width="80%"></span>
+                        <span><img src="img/puñal.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </p><br>
+                </article>
+
+            </Section>
+</main>
+<footer>
+    <div> <span class="icon-instagram-circled"></span><a href="https://www.instagram.com/elcaosalolvido?igsh=djhhMjhpdTJhcTVk">El Caos al Olvido</a></div>
+    <div> <span class="icon-facebook-circled"></span><a href="https://www.facebook.com/profile.php?id=61560960870630&mibextid=ZbWKwL">El Caos al Olvido</a></div>
+</footer>
+    </div>
+    <div class="capa4" id="capa4"> 
+        <header id="Cabecera">
+            <h1>El Caos Al Olvido</h1>
+        </header>
+        <button id="menu-toggle">☰</button>
+        <nav id="nav-menu">    
+            <div><a href="javascript:Estado('Historia');"><b>Historia del rol</b></a></div>
+            <div><a href="javascript:Estado('Tematicas');"><b>Tem&aacute;ticas</b></a></div>
+            <div><a href="javascript:Estado('Partidas');"><b>Partidas Disponibles</b></a></div>
+            <div><a href="javascript:Estado('Entrevistas');"><b>Entrevistas</b></a></div>
+        </nav>
+        <aside id="Lizq">
+            <figure>
+                <img id="Publicidad" src="./img/El azar es la condena de los mortales_20240614_091350_0000.png" alt="Cthulhu-In-Rlyeh-68065284-1">
+            </figure>
+        </aside>
+        <aside id="Ldch">
+            <figure>
+                <img id="Publicidad" src="./img/¡Mira mi nuevo diseño hecho en Canva!.png" alt="Cthulhu-In-Rlyeh-68065284-1">
+            </figure>
+        </aside>
+        <main>
+            <section>
+                <article>
+                    <h3>Tem&aacute;ticas del rol</h3>
+                    <p>Aunque muy a menudo se mete los juegos de rol en el g&eacute;nero de la fantas&iacute;a &eacute;pico-mediaval con seres fant&aacute;sticos muy estereotipados,(como elfos, magos y dragones), lo que problamente se deba a que el juego m&aacute;s famoso se basaba en las novelas de ese g&eacute;nero. La ambientaci&oacute;n del rol en realidad tiene una indinidad de tem&aacute;ticas, limitadas solo por la imaginaci&oacute;n. <br><br>
+                    Entre las diferentes tem&aacute;ticas podemos distintir en:
+                <ul>
+                    <li><b>Romance</b> <br><br>
+                    Este g&eacute;nero aunque esta mal explicado este su definicion dentro la de comunidad rolera, son los diferentes sucesos que ocurren dentro de una historia que conlleva a la uni&oacute;n amorosa o &iacute;ntima de una pareja o grupo de personajes, este utiliza la descripci&oacute;n de emociones y sentimientos como base fundamental de la narraci&oacute;n de la historia, despu&eacute;s de todo, una historia amorosa suele ser contada mediante el uso de los sentimientos de los personajes pasando por obst&aacute;culos que tuvieron que superar para poder llegar a sentir dicho sentimiento de amor. <br><br>
+                    dentro de este g&eacute;nero se pueden encontrar las partidas de rol tipo <i>Musumusume</i> que es son partidas donde el objetivo es conquitar a tu crush evitando caer en las garras de tu Arista el cual esta enamorado de ti desde mucho tiempo
+                    <figure>
+                        <span><img src="img/musu-musu-musume-el-juego-de-rol.jpg" alt="" width="80%"></span>
+                        <span><img src="img/std.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </li>
+                    <li><b>Aventura</b> <br><br>
+                    Este g&eacute;nero describe o narra los viajes, problemas y reisgos que deben pasar los personajes en el argumento de la historia, suele ser uno de los g&eacute;neros m&aacute;s recurridos dentro de la comunidad, siendo acompañado por los de fantas&iacute;a. <br><br>
+                    Utiliza recurso de la descripci&oacute;n de paisaje, nuevos lugares y nuevos personajes, tambi&eacute;n como de problemas y situaciones los cuales los personajes deben superar para continuar con la historia.Suele desarrolarse la trama en vez del aspecto psicol&oacute;gico de los personajes. <br><br>
+                    Dentro de este g&eacute;nero se pueden encontrar las partidas de rol tipo <i>Dungeon and Dragons</i> que son partidas aparte de fantas&iacute;a mediaval tiene toques de aventura 
+                    <figure>
+                        <span><img src="img/aventure.jpg" alt="" width="80%"></span>
+                        <span><img src="img/aventure2.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </li>
+                    <li><b>Acci&oacute;n</b> <br><br>
+                    Este g&eacute;nero aunque no est&aacute; bien especificado en la comunidad con un concepto, puede ser tomado o denominado de la siguiente manera: es el conjunto de stiuaciones o problem&aacute;ticas en las cuales, los personajes son colocados para vivir y desaroollar mediante el reisto o peligro con escenas de alta tensi&oacute;n, que puedan dar un sentimiento de adrenalina al lector o participante.<br><br>
+                    Son recurrentes en roles como los policiales o de guerras de bandas, qu esuelen utilizar mucho lo qu&eacute; es el peligro y situcacines de alte tensi&oacute;n para crear una trama que pueda dar la sensaci&oacute;n de "acci&oacute;n" al lector o participante. <br><br>
+                    Este g&eacute;nero utiliza mucho la sensaci&oacute;n de adrenalina y una cantidad exqagerada de movimientos en un mismo turno, usando la descripci&oacute;n de acciones y como una gran cantidad de cosas pueden suceder en tan poco tiempo.
+                    <figure>
+                        <span><img src="img/accion.jpg" alt="" width="80%"></span>
+                        <span><img src="img/accion1.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </li>
+                    <li><b>Horror</b> <br><br>
+                    Este g&eacute;nero de rol el cual tarta de causar miedo en el lector o participante del rol mediante el uso de diferentes sucesos que son elementos fuera de lo com&uacute;n, digase sucesos paranormales o criaturas que van m&aacute;s all&aacute; de la racional no tienen. <br><br>
+                    Utiliza la descripci&oacute;n de sensaciones que ninguna persona suele experimentar seguido, sea el uso de la descripci&oacute;n y adversi&oacute;n o descripciones de escenas que al ojo com&uacute;n se vean grotescas o generen la sensaci&oacute;n de incomodidad e inseguridad al lector o participante
+                    <figure>
+                        <span><img src="img/horror.jpg" alt="" width="80%"></span>
+                        <span><img src="img/horror1.jpg" alt="" width="80%"></span>
+                    </figure> 
+                    </li>
+                    <li><b>Drama</b> <br><br>
+                    Este g&eacute;nero se especializa directamente en las relaciones de los personajes y sus conflictos como ser individual, creando problemas entre ellos y buscando desarrollar cada uno de estos individualmente hasta que todos cierren con su arco narrativo. <br><br>
+                    Utiliza los di&aacute;logos de los personajes como medio principal para generar las problem&aacute;ticas de la trama, tambi&eacute;n suele usar varios de los sucesos de la historia para ser empleado en contra de otros personajes, busca la creaci&oacute;n de bastantes problemas antes de la soluci&oacute;n de esta.
+                    <figure>
+                        <span><img src="img/drama.jpg" alt="" width="80%"></span>
+                        <span><img src="img/drama1.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </li>
+                    <li><b>Misterio/Suspenso</b> <br><br>
+                    Su objetivo principal es mantener al lector de la expectaiva, generalmente en su estado de tensi&oacute;n, de lo que ouede ocurrirle a los personaje y, por lo tanto, atento al desarrollo del conflicto o nudo de la narraci&oacute;n. <br><br>
+                    Es un g&eacute;nero que trasmite emoci&oacute;n e intriga, ganas de saber qu&eacute; suceder&aacute; y c&oacute;mo finalizar&aacute; la historia.
+                    <figure>
+                        <span><img src="img/mistery.jpg" alt="" width="80%"></span>
+                        <span><img src="img/suspense.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </li>
+                    <li><b>Hit&oacute;ricos</b> <br><br>
+                    Como su nombre indica, est&aacute;n basados en hecho reales, pero al ser la naturaleza de un juego de rol la que los jugadores interact&uacute;en en la historia, estos juegos dan la posibilidad de cambiar los acontecimientos que todos conocemos, o simplemente se utiliza el contexto hist&oacute;rico para ambientar lo que ser&aacute; la avantura en s&iacute;. <br><br>
+                    Esta categor&iacute;a es muy interesante para fines educativos. Algunos juegos de esta categor&iacute;a son: <i>¡Piratas!, Far West, Comandos de guerra, Juego de rol del capit&aacute;n Alatriste, etc.</i> Se entiende que un juego hist&oacute;rico hay que limitarse a los hechos, a lo meramente factible y comprobable, y a la coherencia espacio-temporal. <br><br>
+                    Por ello hay que tener cuidado con las 'aportaciones libres' y fant&aacute;sticas de los autores para no caer en lo irreal, que podr&iacute;a echar por tierra el objetivo puramente hist&oacute;rico. <br><br>
+                    En cambio, al estar basados en la realidad, exige por parte de quien crea la cultural, etc., pues se da el caso de que si los jugadores tienen un conocimiento mayor que el director de juego en alguno de los aspectos de la hsitoria, aquellos podr&iacute;an echar por tierra sus planes y quedar este en rid&iacute;culo.<br><br>
+                    Los manuales que acompañan al juego suele intentar dar la informaci&oacute;n m&iacute;nima imprescindible para cubrir este punto, adem&aacute;s de servir como material did&aacute;ctico, pero hay que tener cuidado con las aportaciones 'libres' de los autores.
+                    <figure>
+                        <span><img src="img/historico.jpg" alt="" width="80%"></span>
+                        <span><img src="img/historicos1.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </li>
+                    <li><b>Terror</b> <br><br>
+                    Este g&eacute;nero literario pretende divertir a trav&eacute;s de la creaci&oacute;n del misterio, la intriga y el miedo. Para que esto sea posible, es necesario poner a los personajes en una situcai&oacute;n creible y coherente, po lo que se suele situar la acci&oacute;n en el mundo 'real', en el pasado o en el presente, aunque tambi&eacute;n los hay en el futuro, pero eso entra en el &aacute;mbito de la ciencia ficci&oacute;n. <br><br>
+                    Los juegos de terror suelen basarse en supersticiones culturales o pueden ser de base cient&iacute;fica, como los basados en la obrea de H.P. Lovecraft. Aunque habitualmente los protagonistas son personas 'normales', a ra&iacute;z de juegos como <i>Vampiro: la mascarada</i>, los jugadores pudieron tomar el papel de las criaturas que son el origen de dicho terror: vampiros, hombres lobo, esp&iacute;rutus...
+                    <figure>
+                        <span><img src="img/terror.jpg" alt="" width="80%"></span>
+                        <span><img src="img/partidarol.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </li>
+                    <li><b>Ucron&iacute;a (realidad alternativa)</b> <br><br>
+                    Muchos juegos plantean un mundo similar al nuestro, para poder salirse de las limitaciones que supondr&iacute;a ceñirse a la realidad, pero aprovechan detalles culturales ya conocidos ayudan a su asimilaci&oacute;n. <br><br>
+                    La ucron&iacute;a consiste en la reconstrucci&oacute;n ficitica de nuestro mundo real, pero a partir de c&oacute;mo podr&iacute;a haber sido en vez de como es en su estado ya conocido. Dentro de esta categot&iacute;a entrar&iacute;a juegos como <i>Castillo de <i>Falkenstein</i>o <i>Space: 1889.</i></i>
+                    <figure>
+                        <span><img src="img/alternativerelative.jpg" alt="" width="80%"></span>
+                        <span><img src="img/alternativerelative1.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </li>
+                    <li><b>Fantas&iacute;a &eacute;pico-medieval</b> <br><br>
+                    Tambi&eacute;n llamada <b><i>fantas&iacute;a heroica</i></b>, se basa en las gestas medievales europeas, donde un h&eacute;roe viajaba, combat&iacute;a y resolv&iacute;a problemas intelectuales y morales. Muchos juegos de rol de esa categor&iacute;a est&aacute;n basados en otras literarias, como <i>El señor de los anillos</i>, pero otros inspiraron la l&iacute;nea editorial paralelea, que sirviera de apoyo promocional. como es el caso de todas las colecciones de novelas basadas en el juego de rol cl&aacute;sico <i>Dungeon and Dragons</i> (<i>Cr&oacute;nicas de la Dragonlance</i>, <i>Reinos Olvidados</i>, <i>Falcongris</i>, etc). En la misma l&iacute;nea esta <i>Warhammer Fantasy Battle</i>, cuya princiapl funete de ingresos se basa en la venta de miniaturas de metal y pl&aacute;stico. 
+                    <figure>
+                        <span><img src="img/fantasia.jpg" alt="" width="80%"></span>
+                        <span><img src="img/dragonlance.jpg" alt="" width="80%"></span>
+                    </figure>
+                    </li>
+                    <li><b>Ficci&oacute;n completa o futura</b> <br><br>
+                    Aquellos juegos de rol que no est&aacute;n basados en una situcai&oacute;n no definida en el tiempo o en el espacio, o en estimaciones temporales arbitrarias hacia el futuro: <br><br>
+                        <ol>
+                            <li><b>Ciencia ficci&oacute;n futurista</b> <br>
+                            A ra&iacute;z de la aparici&oacute;n de los primeros juegos de rol de fantas&iacute;a, se adaptaron las reglas para poder ser tulizadas en ambientres futuristas, cambiando las espadas de metal por pistolas laser, la magia por la ps&iacute;quica, los castillos por naves espaciales, los dragones por robots gigantes o criaturas venidas del espacio exterior y los viajes cruzando r&iacute;os y montañas por los saltos interplanetarios a la velicidad de la luz. <br><br>
+                            En el fondo las historias son muy similares a las medievales, con los mismo objetivos (salvar, escapar, derrotar, etc.), quedando la parte cientif&iacute;ca en segundo plano. As&iacute; aparecieron juegos como <i>Paranoia, Star Strek, Mechawarrior, Traveller, 2300 AD, etc.</i> <br><br>
+                            A ra&iacute;z de la llegada de internet, y de obras como <i>Neuromante</i>, de William Gibson, el futuro tom&oacute; otro cariz m&aacute;s oscuro y decadente, y el espectro creativo se abri&oacute; con juegos como <i>Cyberpunk 2020</i>. <br><br>
+                            Otras vertientes basadas en la ciencia ficci&oacute;n son los superh&eacute;roes, mutantes y mezclas entre fantas&iacute;a medieval y ciencia ficci&oacute;n, como ocurre en los juegos <i>Sol Oscuro, Shadowrun o Fading Suns</i>, en los que la ciencia ficci&oacute;n es meramente un decorado
+                            <figure>
+                                <span><img src="img/futurista,jpg" alt="" width="80%"></span>
+                                <span><img src="img/futurista1.jpg" alt="" width="80%"></span>
+                            </figure>
+                            </li>
+                            <li><b>Space Opera</b> <br><br>
+                               Tambi&eacute;n llamada fantas&iacute;a &eacute;pico-espacial. Puede decirse que es un subg&eacute;nero del anterior pero en el que el elemento de ciencia ficci&oacute;n es uno m&aacute;s de la ambientaci&oacute;n, aunque pueda en ocasiones represntar su principal trasfondo. Asimismo, dentro del g&eacute;nero del <i>Space Opera</i> existe el juego de rol de mismo t&iacute;tulo, <i>Space Opera</i>, publicado por primera vez en 1980 en Estados Unidos. 
+                                <figure>
+                                    <span><img src="img/spaceopera.jpg" alt="" width="80%"></span>
+                                    <span><img src="img/spaceopera1.jpg" alt="" width="80%"></span>
+                                </figure>
+                                </li>
+                        </ol>
+                    </li>
+                </ul>
+            </p><br>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div> <span class="icon-instagram-circled"></span><a href="https://www.instagram.com/elcaosalolvido?igsh=djhhMjhpdTJhcTVk">El Caos al Olvido</a></div>
+            <div> <span class="icon-facebook-circled"></span><a href="https://www.facebook.com/profile.php?id=61560960870630&mibextid=ZbWKwL">El Caos al Olvido</a></div>
+        </footer>
+    </div>
+    <div class="capa5" id="capa5"> 
+        <header id="Cabecera">
+            <h1>El Caos Al Olvido</h1>
+        </header>
+        <button id="menu-toggle">☰</button>
+        <nav id="nav-menu">   
+            <div><a href="javascript:Estado('Historia');"><b>Historia del rol</b></a></div>
+            <div><a href="javascript:Estado('Tematicas');"><b>Tem&aacute;ticas</b></a></div>
+            <div><a href="javascript:Estado('Partidas');"><b>Partidas Disponibles</b></a></div>
+            <div><a href="javascript:Estado('Entrevistas');"><b>Entrevistas</b></a></div>
+        </nav>
+        <aside id="Lizq">
+            <figure>
+                <img id="Publicidad" src="./img/El azar es la condena de los mortales_20240614_091350_0000.png" alt="Cthulhu-In-Rlyeh-68065284-1">
+            </figure>
+        </aside>
+        <aside id="Ldch">
+            <figure>
+                <img id="Publicidad" src="./img/¡Mira mi nuevo diseño hecho en Canva!.png" alt="Cthulhu-In-Rlyeh-68065284-1">
+            </figure>
+        </aside>
+        <main>
+            <section>
+                <article>
+                    <h3>PARTIDAS DISPONIBLES</h3>
+                    <p></p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div> <span class="icon-instagram-circled"></span><a href="https://www.instagram.com/elcaosalolvido?igsh=djhhMjhpdTJhcTVk">El Caos al Olvido</a></div>
+            <div> <span class="icon-facebook-circled"></span><a href="https://www.facebook.com/profile.php?id=61560960870630&mibextid=ZbWKwL">El Caos al Olvido</a></div>
+        </footer>
+    </div>
+
+    <div class="capa6" id="capa6"> 
+        <header id="Cabecera">
+            <h1>El Caos Al Olvido</h1>
+        </header>
+        <button id="menu-toggle">☰</button>
+        <nav id="nav-menu">    
+            <div><a href="javascript:Estado('Historia');"><b>Historia del rol</b></a></div>
+            <div><a href="javascript:Estado('Tematicas');"><b>Tem&aacute;ticas</b></a></div>
+            <div><a href="javascript:Estado('Partidas');"><b>Partidas Disponibles</b></a></div>
+            <div><a href="javascript:Estado('Entrevistas');"><b>Entrevistas</b></a></div>
+        </nav>
+        <aside id="Lizq">
+            <figure>
+                <img id="Publicidad" src="./img/El azar es la condena de los mortales_20240614_091350_0000.png" alt="Cthulhu-In-Rlyeh-68065284-1">
+            </figure>
+        </aside>
+        <aside id="Ldch">
+            <figure>
+                <img id="Publicidad" src="./img/¡Mira mi nuevo diseño hecho en Canva!.png" alt="Cthulhu-In-Rlyeh-68065284-1">
+            </figure>
+        </aside>
+        <main>
+            <section>
+                <article>
+                    <h3>ENTREVISTAS</h3>
+                    <p></p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div> <span class="icon-instagram-circled"></span><a href="https://www.instagram.com/elcaosalolvido?igsh=djhhMjhpdTJhcTVk">El Caos al Olvido</a></div>
+            <div> <span class="icon-facebook-circled"></span><a href="https://www.facebook.com/profile.php?id=61560960870630&mibextid=ZbWKwL">El Caos al Olvido</a></div>
+        </footer>
+    </div>
+</body>
+</html>
