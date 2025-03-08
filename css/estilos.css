@@ -212,7 +212,7 @@ footer div a:hover {
 }
 
 /* Media queries para dispositivos móviles */
-@media (min-width: 360px) and (max-width: 3000px) {
+@media (min-width: 360px) and (max-width: 2000px) {
    body {
       width: 100%;
    }
