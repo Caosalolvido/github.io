@@ -6,7 +6,7 @@ header {
     font-size: xx-large;
     border: 2px solid grey;
     box-shadow: 8px 2px 8px black;
-    width: 94%;
+    width: 95%;
 }
 
 .container {
@@ -33,7 +33,7 @@ header {
 }
 
 /* Media query para dispositivos móviles */
-@media (max-width: 3000px) {
+@media (max-width: 2000px) {
     header {
         font-size: large;
         width: 100%;
