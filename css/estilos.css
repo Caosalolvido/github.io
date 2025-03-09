@@ -29,13 +29,13 @@ body {
 nav {
    text-align: center;
    background-color: rgba(162, 162, 164, 0.172);
-   width: 0%;
+   width: 68.5%;
    margin: auto;
    box-shadow: 8px 2px 8px rgb(0, 0, 0);
    position: absolute;
    top: 238px;
-   right: 100px;
-   left: 100px;
+   right: 96px;
+   left: 110px;
    display: flex;
    flex-direction: row;
    justify-content: space-around;
@@ -211,3 +211,99 @@ footer div a:hover {
    font-size: xx-large;
 }
 
+/* Media queries para dispositivos móviles */
+@media (min-width: 360px) and (max-width: 1080px) {
+   body {
+      width: 100%;
+   }
+
+   #menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 2em;
+      position: absolute;
+      top: 2%;
+      left: 10px;
+      z-index: 1000;
+      color: rgba(190, 196, 7, 0.819);
+      text-shadow: 2px 1px 2px black;
+   }
+
+   #nav-menu {
+      display: none; /* Oculto por defecto en móvil */
+      flex-direction: column;
+      width: 99%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: rgba(162, 162, 164, 0.9);
+      z-index: 999;
+   }
+
+  #nav-menu a {
+      width: 92%;
+      margin: 5px 0;
+      padding: 10px;
+   }
+
+  /* Muestra el menú cuando se hace clic en el botón de menú */
+#nav-menu.show {
+   display: flex; /* Asegura que el menú aparezca en móviles */
+}
+article {
+   background-color: rgba(164, 164, 167, 0.801);
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+   /* border: 2px solid  black; */
+   width: 90%;
+   padding-top: 0.1%;
+   padding-bottom: 0.1%;
+   margin-left: 20px;
+   margin-right: 100px;
+   margin-bottom: 10px;
+}
+h4{
+   
+   width: 60%;
+   margin-left: 50px;
+}
+   #Lizq {
+      display: none;
+
+   }
+
+   #Ldch {
+      display: none;
+   }
+
+   main {
+      width: 95%;
+      margin-top: 20%;
+   }
+
+   h3 {
+      width: 80%;
+      margin-left: 10%;
+   }
+
+   p, li {
+      width: 95%;
+      margin-left: 2.5%;
+   }
+
+   figure {
+      flex-direction: row;
+      margin-left: 8%;
+   }
+
+   footer {
+      flex-direction: row;
+      width: 98%;
+   }
+   
+
+   footer div a {
+      font-size: medium;
+   }
+}
