@@ -33,7 +33,7 @@ header {
 }
 
 /* Media query para dispositivos móviles */
-@media (max-width: 2000px) {
+@media (max-width: 1080px) {
     header {
         font-size: large;
         width: 100%;
